@@ -40,8 +40,6 @@ class GitHubApiTestCase(unittest.TestCase):
             self.assertEqual(response.status_code, 401)
             self.assertEqual(response.json(), {'message': "success"})
             
-
-        
-
-
+if __name__ == '__main__':
+    unittest.main()
         
