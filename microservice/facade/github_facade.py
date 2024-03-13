@@ -12,6 +12,6 @@ class GitHubFacade:
         response = self.github_service.add_folders(folders, token, name)
         return response
     
-    def send_file(self, id_crea_type, token):
-        response = self.github_service.send_file(id_crea_type, token)
+    def send_file(self, id_crea_type, token, user, destination_repo, owner, destination_path):
+        response = self.github_service.send_file(id_crea_type, token, user, destination_repo, owner, destination_path)
         return response 
